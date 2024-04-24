@@ -1,16 +1,8 @@
-let name = 'Leon'
-
-name = 'Alejandro'
-
-const lastName = 'Leon'
-
-const condition = true
-
-if (condition) {
-  const lastName = "Hyper"
-  console.log(lastName)
+function getInfo (name = 'Joel', lastName = 'Leon') {
+  const info = `${name} ${lastName}`
+  return info
 }
 
-console.log(`Hello world!!!
-${name} - ${lastName}`);
+const info = getInfo('Alejandro', 'Leon')
 
+console.log(getInfo())
