@@ -37,18 +37,11 @@ const car = {
   cheers: function () { return `Hello ${this.brand.name} ${this.name}` }
 }
 
-// car.name = 'F40'
-// car.price = 1500000
-// const cheers = car.cheers()
-// console.log(car)
-// console.log(cheers)
-// console.log(car.totalInventory())
+if (car.lugarProcedencia !== undefined && car.lugarProcedencia.name) {
+  console.log('Cumple')
+} else {
+  console.log('No existe lugar de procedencia')
+}
 
-const car2 = { ...car }
-
-const validate = car === car2
-console.log(validate)
-
-car2.id = 20
-
-console.log(car2.id)
+console.log(car.lugarProcedencia)
+console.log(car.brand?.municipio.name)
