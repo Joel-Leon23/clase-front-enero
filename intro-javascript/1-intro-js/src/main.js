@@ -11,4 +11,6 @@ if (condition) {
   console.log(lastName)
 }
 
-console.log('Hello world ' + name + ' ' + lastName);
+console.log(`Hello world!!!
+${name} - ${lastName}`);
+
