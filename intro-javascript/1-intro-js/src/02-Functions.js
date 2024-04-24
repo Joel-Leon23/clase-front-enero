@@ -5,4 +5,4 @@ function getInfo (name = 'Joel', lastName = 'Leon') {
 
 const info = getInfo('Alejandro', 'Leon')
 
-console.log(getInfo())
+console.log(info)
