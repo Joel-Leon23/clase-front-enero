@@ -1,8 +1,5 @@
-import { findCarById } from './data/carros.js'
+const API_URL = 'https://jsonplaceholder.typicode.com/users'
 
-findCarById(2).then(json => {
-  console.log(json)
-  console.log('Success')
-}).catch(err => {
-  console.error(err)
+fetch(API_URL).then(res => res.json()).then(data => {
+  console.log(data)
 })
