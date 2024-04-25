@@ -1,4 +1,4 @@
-import carros, { carroPorNombre } from './data/carros'
+import { carros, carroPorNombre } from './data/carros'
 
 console.log(carros)
 

@@ -1,4 +1,4 @@
-export const carros = [
+const carros = [
   {
     id: 1,
     marca: 'Seat',
@@ -56,4 +56,9 @@ export const carros = [
   }
 ]
 
-export const carroPorNombre = (name) => carros.find(car => car.nombre === name)
+const carroPorNombre = (name) => carros.find(car => car.nombre === name)
+
+export {
+  carros as default,
+  carroPorNombre
+}
