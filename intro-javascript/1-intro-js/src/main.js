@@ -6,8 +6,17 @@ const API_URL = 'https://jsonplaceholder.typicode.com/users'
 
 const findAllUsers = async () => {
   const res = await fetch(API_URL)
-  return await res.json()
+  const data = await res.json()
+
+  const ul = document.createElement('ul')
+
+  data.forEach(element => {
+    const li = document.createElement('li')
+    li.innerText = element.name
+    ul.appendChild(li)
+  })
+
+  document.getElementById('root').append(ul)
 }
 
-const users = await findAllUsers()
-console.log(users)
+findAllUsers()
