@@ -1,18 +1,22 @@
-const promedio = 7.0
+const carros = ['Ferrari', 'Nissan GTR', 'Porsche', 'McLaren', 'Mercedes']
 
-let resultado = ''
+carros.push('Mustang GT500', 'Challenger', 'Camaro')
 
-resultado = promedio >= 7.0 ? 'Aprobado' : 'Reprobado'
+console.log(carros)
 
-console.log(resultado)
+const num = [10, 5, 6, 12, 22]
 
-let valorMaximo = 0
+num.push(332, 532, 535)
 
-const a = 4
-const b = 6
-const c = 10
+console.log(num)
 
-valorMaximo = a > b ? a : b
-valorMaximo = valorMaximo > c ? valorMaximo : c
+carros.forEach(car => console.log(car))
 
-console.log(valorMaximo)
+for (const car of carros) {
+  console.log(car)
+}
+
+for (let i = 0; i < carros.length; i++) {
+  const element = carros[i]
+  console.log('i' + carros[i])
+}
