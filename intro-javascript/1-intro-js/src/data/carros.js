@@ -57,7 +57,7 @@ const carros = [
 ]
 
 const carroPorNombre = (name) => carros.find(car => car.nombre === name)
-const carroPorId = (id) => carros.filter(car => car.id === id)
+const carroPorId = (id) => carros.find(car => car.id === id)
 
 export {
   carros as default,
